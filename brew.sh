@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # Configure Git
+echo -e "Time to configure some details for Git\n"
 read -p "Enter name # " name
 read -p "Enter email # "  email
 
