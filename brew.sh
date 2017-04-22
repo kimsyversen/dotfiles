@@ -18,19 +18,13 @@ brew doctor && brew update
 brew install coreutils
 brew install wget
 
-# Install cask
-brew install caskroom/cask/brew-cask 
-
 # Install some software
-brew cask install subime-text sequel-pro spectacle dropbox viscosity bash-completion google-chrome alfred firefox git flux iterm2 spotify vlc the-unarchiver
+brew cask install sublime-text sequel-pro spectacle dropbox viscosity bash-completion google-chrome alfred firefox git flux iterm2 spotify vlc the-unarchiver
 
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
 sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
-
-# Install srm
-brew install srm && brew link --force srm
 
 # Quicklook plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webpquicklook suspicious-package && qlmanage -r
