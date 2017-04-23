@@ -270,8 +270,7 @@ defaults write com.apple.dock showhidden -bool true
 find ~/Library/Application\ Support/Dock -name "*.db" -maxdepth 1 -delete
 
 #Move dock to left side of screen
-defaults write com.apple.dock pinning -string start
-
+defaults write com.apple.dock orientation -string "left"
 
 
 ###############################################################################
