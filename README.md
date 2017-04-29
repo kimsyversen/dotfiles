@@ -1,6 +1,6 @@
 # Kims dotfiles and MacOS setup
 
-[Terminal theme](http://i.imgur.com/8psgBag.png)
+![Terminal theme](http://i.imgur.com/8psgBag.png)
 
 # Install 
 ```
