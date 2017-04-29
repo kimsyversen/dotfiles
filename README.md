@@ -1,11 +1,10 @@
+# Kims dotfiles and MacOS setup
+
+[Terminal theme](http://i.imgur.com/8psgBag.png)
+
 # Install 
 ```
-cd ~
-git clone https://github.com/kimsyversen/dotfiles
-cd dotfiles
-bash brew.sh
-bash bootstrap.sh --force
-bash macos.sh
+git clone https://github.com/kimsyversen/dotfiles && cd dotfiles && bash brew.sh && bash bootstrap.sh --force && bash macos.sh
 ```
 
 # Thanks to 

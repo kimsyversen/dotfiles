@@ -318,6 +318,8 @@ defaults write com.apple.terminal "Startup Window Settings" -string "Kim"
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
+
+# Use the Smyck color scheme by default in Terminal.app (https://github.com/hukl/Smyck-Color-Scheme/)
 osascript <<EOD
 
 tell application "Terminal"
@@ -325,7 +327,7 @@ tell application "Terminal"
 	local allOpenedWindows
 	local initialOpenedWindows
 	local windowID
-	set themeName to "terminal-profile"
+	set themeName to "Smyck"
 
 	(* Store the IDs of all the open terminal windows. *)
 	set initialOpenedWindows to id of every window
