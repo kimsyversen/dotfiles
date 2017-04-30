@@ -462,6 +462,13 @@ defaults write org.videolan.vlc NSRecentDocumentsLimit 0
 defaults write org.videolan.vlc.LSSharedFileList RecentDocuments -dict-add MaxAmount 0
 
 ###############################################################################
+# Sublime text.                                                               #
+###############################################################################
+
+# Copy the Smyck theme to
+cp theme/Smyck.tmTheme ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
