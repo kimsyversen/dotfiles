@@ -1,12 +1,5 @@
 [alias]
-  	cm = commit
-
-	# Basics
-  co = checkout
   cm = commit
-  p = push
-  ac = '!git add -A && git commit'
-
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
