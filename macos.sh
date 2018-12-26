@@ -226,6 +226,9 @@ defaults write com.apple.finder _FXSortFoldersFirst -bool true
 # Dock, Dashboard 					                                          #
 ###############################################################################
 
+# Don’t show recent applications in Dock
+defaults write com.apple.dock show-recents -bool false
+
 # Enable highlight hover effect for the grid view of a stack (Dock)
 defaults write com.apple.dock mouse-over-hilite-stack -bool true
 
