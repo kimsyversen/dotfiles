@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
-# Install homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew upgrade
+# Install Homebrew
+[ ! -f "`which brew`" ] && ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Configure Git
 echo -e "Time to configure some details for Git\n"
@@ -12,6 +11,7 @@ read -p "Enter email # "  email
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
+
 sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 
 # Install some other useful utilities like `sponge`.
@@ -21,23 +21,18 @@ brew install moreutils
 brew install findutils
 
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+brew install gnu-sed
 
 # Install more recent versions of some macOS tools.
-brew install wget --with-iri
-brew install grep
+brew install wget grep
 
 # Install software
-brew cask install virtualbox virtualbox-extension-pack atom \
-sequel-pro spectacle dropbox viscosity bash-completion google-chrome \
-alfred firefox git flux iterm2 spotify vlc the-unarchiver
+brew cask install iterm2 signal dropbox alfred alfred dropbox firefox google-chrome vlc 1password viscosity handbrake plex veracrypt spotify qbittorrent skybox sublime-text visual-studio-code sequel-pro the-unarchiver skybox
 
 # Quicklook plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json \
-qlprettypatch quicklook-csv betterzipql webpquicklook \
+qlprettypatch quicklook-csv  webpquicklook \
 suspicious-package
 
-qlmanage -r
-
-# Remove outdated versions from the cellar.
-brew cleanup
+# Reset quicklookd server, rebuild list of generator plugins
+#qlmanage -r
