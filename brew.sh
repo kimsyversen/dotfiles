@@ -4,7 +4,7 @@
 [ ! -f "`which brew`" ] && ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Configure Git
-echo -e "Time to configure some details for Git\n"
+
 read -p "Enter name # " name
 read -p "Enter email # "  email
 
@@ -27,11 +27,11 @@ brew install gnu-sed
 brew install wget grep
 
 # Install software
-brew cask install iterm2 signal dropbox alfred alfred dropbox firefox google-chrome vlc 1password viscosity handbrake plex veracrypt spotify qbittorrent skybox sublime-text visual-studio-code sequel-pro the-unarchiver skybox
+brew install --cask iterm2 signal alfred firefox vlc handbrake plex veracrypt spotify sublime-text visual-studio-code the-unarchiver 
 
 # Quicklook plugins
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json \
-qlprettypatch quicklook-csv  webpquicklook \
+brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json \
+qlprettypatch quicklook-csv qlimagesize webpquicklook \
 suspicious-package
 
 # Reset quicklookd server, rebuild list of generator plugins
