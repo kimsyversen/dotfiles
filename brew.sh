@@ -27,7 +27,7 @@ brew install gnu-sed
 brew install wget grep
 
 # Install software
-brew install --cask iterm2 signal alfred firefox vlc handbrake plex veracrypt spotify sublime-text visual-studio-code the-unarchiver 
+brew install --cask iterm2 signal alfred firefox vlc handbrake plex veracrypt spotify sublime-text visual-studio-code the-unarchiver spaceship
 
 # Quicklook plugins
 brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json \
